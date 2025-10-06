@@ -5,7 +5,7 @@ import Footer from '../../Component/Footer/Footer';
 
 const Roots = () => {
     return (
-        <div>
+        <div className='max-w-[1280px] mx-auto'>
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
