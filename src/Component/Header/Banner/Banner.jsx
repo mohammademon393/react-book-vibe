@@ -8,7 +8,7 @@ const Banner = () => {
           <h1 className='text-[56px] font-bold'>Books to freshen up <br /> your bookshelf</h1>
           <button className="bg-[#23be0a] text-white mt-5 btn">View The List</button>
         </div>
-        <img src={books} width={300} className=' rounded-xl' alt="img comeing soon" />
+        <img src={books} width={500} className=' rounded-xl' alt="img comeing soon" />
       </div>
     );
 };
