@@ -1,10 +1,11 @@
 import React from 'react';
-import { useLoaderData, useParams } from 'react-router';
+import { useLoaderData } from 'react-router';
 
 const BookDetails = () => {
-    const  id  = useParams();
-    const data = useLoaderData();
-    console.log(data);
+    const {bookId} = useLoaderData();
+    console.log(bookId);
+    
+    
     
     return (
         <div>

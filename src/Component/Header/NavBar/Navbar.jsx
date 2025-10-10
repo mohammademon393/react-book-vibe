@@ -1,13 +1,40 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 
 const Navbar = () => {
 
     const Links = (
       <>
-        <NavLink to={'/'} className="m-2 font-bold">Home</NavLink>
-        <NavLink to={'/about'} className="m-2 font-bold">About</NavLink>
-        <li className="m-2">Pages to Read</li>
+        <NavLink
+          to={"/"}
+          className={({ isActive }) =>
+            isActive
+              ? "text-purple-600 underline font-semibold mr-2"
+              : "text-gray-600 hover:text-purple-600 font-semibold mr-2"
+          }
+        >
+          Home
+        </NavLink>
+        <NavLink
+          to={"/about"}
+          className={({ isActive }) =>
+            isActive
+              ? "text-purple-600 underline font-semibold mr-2"
+              : "text-gray-600 hover:text-purple-600 font-semibold mr-2"
+          }
+        >
+          About
+        </NavLink>
+        <NavLink
+          to={"/read"}
+          className={({ isActive }) =>
+            isActive
+              ? "text-purple-600 underline font-semibold mr-2"
+              : "text-gray-600 hover:text-purple-600 font-semibold mr-2"
+          }
+        >
+          Pages to Read
+        </NavLink>
       </>
     );
 
@@ -32,7 +59,7 @@ const Navbar = () => {
                 />{" "}
               </svg>
             </div>
-            <ul
+            <ul 
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
