@@ -9,8 +9,8 @@ const Navbar = () => {
           to={"/"}
           className={({ isActive }) =>
             isActive
-              ? "text-purple-600 underline font-semibold mr-2"
-              : "text-gray-600 hover:text-purple-600 font-semibold mr-2"
+              ? "text-purple-600 underline font-semibold mr-3"
+              : "text-gray-600 hover:text-purple-600 font-semibold mr-3"
           }
         >
           Home
@@ -19,18 +19,18 @@ const Navbar = () => {
           to={"/about"}
           className={({ isActive }) =>
             isActive
-              ? "text-purple-600 underline font-semibold mr-2"
-              : "text-gray-600 hover:text-purple-600 font-semibold mr-2"
+              ? "text-purple-600 underline font-semibold mr-3"
+              : "text-gray-600 hover:text-purple-600 font-semibold mr-3"
           }
         >
-          About
+          Listed Books
         </NavLink>
         <NavLink
           to={"/read"}
           className={({ isActive }) =>
             isActive
-              ? "text-purple-600 underline font-semibold mr-2"
-              : "text-gray-600 hover:text-purple-600 font-semibold mr-2"
+              ? "text-purple-600 underline font-semibold mr-3"
+              : "text-gray-600 hover:text-purple-600 font-semibold mr-3"
           }
         >
           Pages to Read
@@ -59,7 +59,7 @@ const Navbar = () => {
                 />{" "}
               </svg>
             </div>
-            <ul 
+            <ul
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
@@ -72,8 +72,8 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{Links}</ul>
         </div>
         <div className="navbar-end flex gap-4">
-          <a className="btn bg-[#23be0a] text-white">Sign In</a>
-          <a className="btn bg-[#59c6d2] text-white">Sign Up</a>
+          <a className="btn btn-success text-white">Sign In</a>
+          <a className="btn btn-info text-white">Sign Up</a>
         </div>
       </div>
     );
